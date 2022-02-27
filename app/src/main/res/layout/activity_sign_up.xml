@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login.SignUpActivity"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="@color/white">
+    <ImageView
+        android:layout_gravity="center"
+        android:src="@drawable/signup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:layout_marginTop="0dp"
+        android:textSize="17sp"
+        android:textColor="@color/black"
+        android:text="Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <EditText
+        android:drawablePadding="30dp"
+        android:drawableStart="@drawable/ic_baseline_person_24"
+        android:paddingLeft="10dp"
+        android:background="@drawable/custom_edt_sign_in"
+        android:textColorHint="@color/trangxam"
+        android:layout_marginTop="5dp"
+        android:imeOptions="actionNext"
+        android:inputType="textPersonName"
+        android:layout_gravity="center"
+        android:hint="Name"
+        android:id="@+id/edt_name"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"/>
+    <TextView
+        android:layout_marginTop="5dp"
+        android:textColor="@color/black"
+        android:textSize="17sp"
+        android:text="Password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <EditText
+        android:drawablePadding="30dp"
+        android:drawableStart="@drawable/iconspassword"
+        android:paddingLeft="10dp"
+        android:background="@drawable/custom_edt_sign_in"
+        android:textColorHint="@color/trangxam"
+        app:passwordToggleEnabled="true"
+        android:imeOptions="actionDone"
+        android:layout_marginTop="5dp"
+        android:layout_gravity="center"
+        android:inputType="textPassword"
+        android:hint="Pick a strong password"
+        android:id="@+id/edt_password"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"/>
+    <TextView
+        android:layout_marginTop="5dp"
+        android:textColor="@color/black"
+        android:textSize="17sp"
+        android:text="Email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <EditText
+        android:drawableStart="@drawable/email"
+        android:paddingLeft="10dp"
+        android:background="@drawable/custom_edt_sign_in"
+        android:ems="10"
+        android:drawablePadding="30dp"
+        android:textColorHint="@color/trangxam"
+        android:hint="tim@apple.com"
+        android:inputType="textEmailAddress"
+        android:id="@+id/edt_email"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"/>
+    <Button
+        android:background="@drawable/custom_edt_input"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:text="Create Account"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:id="@+id/btn_Sign_Up"/>
+    <LinearLayout
+        android:id="@+id/layout_sign_up"
+        android:layout_marginTop="10dp"
+        android:padding="5dp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:textColor="@color/trangxam"
+            android:textSize="15sp"
+            android:text="Already have an account?"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/sign_in"
+            android:textColor="@color/black"
+            android:layout_marginStart="5dp"
+            android:text="Log in"
+            android:textSize="15sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

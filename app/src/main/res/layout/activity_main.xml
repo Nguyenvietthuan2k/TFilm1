@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    tools:ignore="MissingConstraints"
+    android:orientation="vertical"
+    android:background="@color/background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal">
+        <RelativeLayout
+            android:id="@+id/callHome"
+            android:layout_marginLeft="10dp"
+            android:layout_width="180dp"
+            android:layout_height="match_parent">
+            <TextView
+                android:textColor="@color/white"
+                android:id="@+id/te1"
+                android:textSize="29sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TFilm ..."/>
+            <TextView
+                android:id="@+id/nameMain"
+                android:textColor="@color/white"
+                android:padding="2dp"
+                android:textSize="15sp"
+                android:layout_below="@+id/te1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Welcome home "/>
+            <TextView
+                android:textColor="@color/white"
+                android:padding="2dp"
+                android:textSize="15sp"
+                android:id="@+id/textNameMain"
+                android:layout_toRightOf="@id/nameMain"
+                android:layout_below="@+id/te1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </RelativeLayout>
+        <ImageView
+            android:id="@+id/userProfileImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="2dp"
+            android:src="@drawable/userone" />
+    </LinearLayout>
+
+    <androidx.viewpager.widget.ViewPager
+        android:layout_marginTop="20dp"
+        android:id="@+id/slide_pager"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="320dp"/>
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:textColor="@color/white"
+            android:textSize="17sp"
+            android:layout_marginLeft="20dp"
+            android:text="Action Movies"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/txtViewAll"
+            android:textColor="@color/xanhtim"
+            android:textSize="16sp"
+            android:layout_marginLeft="185dp"
+            android:text="view all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:paddingLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:id="@+id/movieRCV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+</LinearLayout>

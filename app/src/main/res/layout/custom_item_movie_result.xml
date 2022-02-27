@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="160dp"
+    tools:ignore="MissingConstraints">
+
+    <ImageView
+        android:id="@+id/image_Results_Movie"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="17dp"
+        tools:layout_editor_absoluteY="21dp"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/nameFilm"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="138dp"
+        tools:layout_editor_absoluteY="31dp" />
+
+    <TextView
+        android:id="@+id/timeFilm"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="138dp"
+        tools:layout_editor_absoluteY="62dp" />
+
+    <TextView
+        android:textColor="@color/white"
+        android:id="@+id/textView3"
+        android:textSize="15sp"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="138dp"
+        tools:layout_editor_absoluteY="91dp" />
+
+    <TextView
+        android:textColor="@color/white"
+        android:textSize="13sp"
+        android:id="@+id/daoDien"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="216dp"
+        tools:layout_editor_absoluteY="91dp" />
+
+    <TextView
+        android:textColor="@color/white"
+        android:textSize="13sp"
+        android:id="@+id/yearsanXuat"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="298dp"
+        tools:layout_editor_absoluteY="91dp" />
+
+    <RatingBar
+        android:id="@+id/ratingBar"
+        style="@style/Widget.AppCompat.RatingBar.Small"
+        android:layout_width="80dp"
+        android:layout_height="15dp"
+        android:layout_below="@id/timeFilm"
+        android:layout_toRightOf="@id/imageView"
+        android:numStars="5"
+        android:stepSize="0.1"
+        tools:layout_editor_absoluteX="138dp"
+        tools:layout_editor_absoluteY="129dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

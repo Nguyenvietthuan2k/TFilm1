@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login.SignUpActivity"
+    android:orientation="vertical"
+    android:padding="20dp">
+    <ImageView
+        android:layout_marginBottom="20dp"
+        android:layout_gravity="center"
+        android:src="@drawable/login1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+        <EditText
+            android:drawablePadding="30dp"
+            android:hint=" Email or Phone"
+            android:drawableStart="@drawable/email"
+            android:textColor="@color/black"
+            android:paddingLeft="15dp"
+            android:background="@drawable/custom_edt_sign_in"
+            android:textColorHint="@color/trangxam"
+            app:errorEnabled="true"
+            android:maxLength="50"
+            android:imeOptions="actionNext"
+            android:inputType="textEmailAddress"
+            android:layout_gravity="center"
+            android:id="@+id/edt_sign_in_email"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"/>
+        <EditText
+            android:drawablePadding="30dp"
+            android:drawableStart="@drawable/iconspassword"
+            android:textColor="@color/black"
+            android:backgroundTint="@color/white"
+            android:paddingLeft="15dp"
+            android:background="@drawable/custom_edt_sign_in"
+            android:textColorHint="@color/trangxam"
+            app:errorEnabled="true"
+            app:passwordToggleEnabled="true"
+            android:imeOptions="actionDone"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:inputType="textPassword"
+            android:hint=" Password"
+            android:id="@+id/edt_sign_in_password"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"/>
+    <Button
+        android:backgroundTint="@color/green"
+        android:background="@drawable/custom_edt_sign_in"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:text="Sign In"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/btn_SignIn"/>
+    <LinearLayout
+        android:id="@+id/layout_sign_up"
+        android:layout_marginTop="20dp"
+        android:padding="10dp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:textSize="15sp"
+            android:text="Don't have an account?"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:textColor="@color/black"
+            android:id="@+id/sign_up"
+            android:layout_marginStart="5dp"
+            android:text="Create Account"
+            android:textSize="15sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <TextView
+        android:textColor="@color/black"
+        android:id="@+id/forgot_Password"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:text="Forgot Password?"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>
+
+<!--<Button-->
+<!--android:textStyle="normal"-->
+<!--android:text="Continue with Google"-->
+<!--android:drawableLeft="@drawable/iconsgoogle"-->
+<!--android:id="@+id/login_google"-->
+<!--android:background="@drawable/custom_edt_sign_in"-->
+<!--android:layout_width="match_parent"-->
+<!--android:layout_height="50dp"-->
+<!--android:layout_marginTop="10dp"-->
+<!--android:layout_marginBottom="10dp"/>-->
+<!--<Button-->
+<!--android:textStyle="normal"-->
+<!--android:text="Continue with Facebook"-->
+<!--android:drawableLeft="@drawable/iconsfacebook"-->
+<!--android:id="@+id/login_facebook"-->
+<!--android:background="@drawable/custom_edt_sign_in"-->
+<!--android:layout_width="match_parent"-->
+<!--android:layout_height="50dp"-->
+<!--android:layout_marginTop="10dp"-->
+<!--android:layout_marginBottom="10dp"/>-->
